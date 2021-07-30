@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CenterAnElemetn/Div</title>
+	<style type="text/css">
+#container {
+    display: flex; /* establish flex container */
+/*    flex-direction: column;  make main-axis vertical */
+    flex-direction: row; /* make main-axis vertical */
+    justify-content: center; /* align items vertically, in this case */
+    align-items: center; /* align items horizontally, in this case */
+    height: 97vh; /* for demo purposes */
+    border: 1px solid black; /* for demo purposes */
+    background-color: #eee; /* for demo purposes */
+}
+
+.box {
+    width: 300px;
+    margin: 5px;
+    text-align: center;
+}
+
+#bluebox { background: aqua; }
+#redbox { background: red; }
+
+	</style>
+</head>
+<body>
+<div id="container"><!-- flex container -->
+
+    <div class="box" id="bluebox"><!-- flex item -->
+        <p>DIV #1</p>
+    </div>
+
+    <div class="box" id="redbox"><!-- flex item -->
+        <p>DIV #2</p>
+    </div>
+
+</div>
+</body>
+</html>
